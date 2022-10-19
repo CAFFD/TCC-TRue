@@ -3,6 +3,11 @@ import { View, Text, SafeAreaView, StyleSheet, TextInput, Button, CheckBox } fro
 
 
 
+
+     
+  
+
+
 const UselessTextInput  = () => {
   const [text, onChangeText, text2, onChangeText2, text3, onChangeText3, text4, onChangeText4, text5, onChangeText5, text6, onChangeText6, text7, onChangeText7, text8, onChangeText8, text9, onChangeText9, text10, onChangeText10 ] = React.useState("");
   const [number, onChangeNumber, ] = React.useState(null);
@@ -45,6 +50,8 @@ Quando foi sua última menstruação?
     
  <Text style= {styles.paragraph}> 
 Seu ciclo menstrual é regular? (geralmente não varia mais do que 7 dias)
+
+    <CheckBox> value={isChecked} onValueChange={setChecked}</CheckBox>
       </Text>
 
       <TextInput
@@ -179,8 +186,7 @@ botao:  {
 
 
 
-
 });
 
-export default UselessTextInput;
+
 
